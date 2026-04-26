@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-PV-PP Agent Compute Corridor Benchmark v0.3
+PV-PP Agent Decision Layer Demo v0.3
 Scenario: Bank Cluster False Optimization Trap
 
 Purpose
@@ -513,7 +513,7 @@ def write_outputs(out_dir: str, scalar_state: IncidentState, pvpp_state: Inciden
         json.dump(payload, f, indent=2)
 
     md = []
-    md.append("# PV-PP Agent Compute Corridor Benchmark v0.3 Results\n")
+    md.append("# PV-PP Agent Decision Layer Demo v0.3 Results\n")
     md.append("Scenario: **Bank Cluster False Optimization Trap**\n")
     md.append("\n## Scalar Summary\n")
     md.append("```json\n" + json.dumps(payload["scalar_summary"], indent=2) + "\n```\n")
