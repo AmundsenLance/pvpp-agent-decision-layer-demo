@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PV-PP Agent Compute Corridor Benchmark v0.3</title>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 900px; margin: 48px auto; padding: 0 24px; line-height: 1.55; }
+    code, pre { background: #f3f3f3; padding: 2px 5px; border-radius: 4px; }
+    pre { padding: 14px; overflow-x: auto; }
+    .card { border: 1px solid #ddd; border-radius: 12px; padding: 20px; margin: 18px 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>PV-PP Agent Compute Corridor Benchmark v0.3</h1>
+    <p>
+      A deterministic benchmark comparing scalar tool optimization against PV-PP corridor governance during a bank compute incident.
+    </p>
+
+    <div class="card">
+      <h2>Core Claim</h2>
+      <p>
+        Scalar optimization can preserve visible performance while destroying compliance, recovery, and security corridors.
+        PV-PP may accept a lower scalar score when that preserves the governing recovery corridor.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>v0.3 Addition</h2>
+      <p>
+        This version separates governing-domain breaches from non-governing tolerated sacrifices. In the sample result,
+        PV-PP sacrifices cost efficiency while preserving availability, latency health, data integrity, compliance logging,
+        and recovery reserve.
+      </p>
+    </div>
+
+    <h2>Run</h2>
+    <pre><code>python3 PVPP_Agent_Compute_Corridor_Benchmark_v0_3.py --steps 10 --out-dir out_pvpp_compute_corridor_v0_3</code></pre>
+
+    <h2>Agent Contrast</h2>
+    <ul>
+      <li><strong>Scalar agent:</strong> chooses the highest immediate weighted score.</li>
+      <li><strong>PV-PP agent:</strong> rejects actions that close governing recovery corridors, even when scalar score rises.</li>
+    </ul>
+  </main>
+</body>
+</html>
