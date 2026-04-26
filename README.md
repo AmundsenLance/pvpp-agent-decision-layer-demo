@@ -134,7 +134,7 @@ This benchmark implements only a toy approximation of that full stack. It is int
 ## How to run
 
 ```bash
-python3 PVPP_Agent_Compute_Corridor_Benchmark_v0_3.py --steps 10 --out-dir out_pvpp_compute_corridor_v0_3
+python3 PVPP_Agent_Decision_Layer_Demo_v0_3.py --steps 10 --out-dir out_pvpp_compute_corridor_v0_3
 ```
 
 The script writes summary output and a results file to the selected output directory.
